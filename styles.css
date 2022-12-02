@@ -1,0 +1,230 @@
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding-bottom: 60px;
+
+  text-align: center;
+  background: #1abc9c;
+  background-image: linear-gradient(to bottom right, rgb(115, 154, 228), rgb(91, 143, 173));
+
+  color: white;
+  font-size: 20px;
+}
+
+/*top nav*/
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  align-self: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: rgb(175, 203, 255);
+  color: black;
+  display: flex;
+
+}
+
+.topnav a.active {
+  background-color:  rgb(115, 154, 228);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.topnav .icon {
+  display: none;
+
+}
+.container{
+  margin: 10px; 
+}
+@media screen and (min-width: 950px) {
+  #panel {
+    display: none !important;
+  
+  }
+  .container {
+    margin: 0 25%; 
+  }
+}
+@media screen and (max-width: 940px) {
+  .topnav a:not(.active) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: flex;
+    top:0;
+
+    height: 100%;
+  }
+  #tietoa {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .image {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*top nav end*/
+
+
+/* vertical menu*/
+.vertical-menu {
+  width:100%;
+}
+
+.vertical-menu a {
+  background-color: rgb(255, 255, 255);
+  color: black !important;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: rgb(136, 204, 250);
+  color: white;
+}
+/* end vertical menu*/
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  display: flex; 
+  flex-direction: row; 
+}
+
+.container-two >* {
+  flex: 1 1 160px;
+}
+
+.image {
+  align-self: center;
+}
+
+.container-two p{
+  font-size: 20px;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  display: flex; 
+  flex-wrap: wrap;
+  background-color: #5f91b6;
+  color: white;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer p {
+  padding: 20px;
+}
+body, html {
+  height: 100%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("assets/Engineer-in-a-server-room-1076176-scaledd.jpg");
+
+
+  /* Full height */
+
+  height: calc(100% - 55px); 
+  margin:0;
+  padding:0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.click-parallax{
+  color:#ffffff;
+  background-color: rgba(115, 154, 228, 0.932);
+  border-radius: 60px;
+  padding: 20px;
+  font-size: 30px;
+  user-select: none; /* Standard syntax */
+}
+.parallax a{
+  text-decoration: none;
+} 
+
+.parallax-header {
+  margin: 30px; 
+  margin-top: 0;
+  display: flex;
+  flex-direction:column; 
+  justify-content: center;
+  height: 100%;
+  align-items:center
+}
+.parallax-header h1 {
+  color:white; 
+  font-size: 80px;
+}
+.click-parallax a:link, a:visited {
+  color:#ffffff;
+}
+
+
+.click-parallax:hover{
+  color:#ffffff;
+  background-color:  rgba(115, 154, 228, 0.63);
+  cursor: pointer;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+html {
+	scroll-behavior: smooth;
+}
